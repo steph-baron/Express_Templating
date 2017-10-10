@@ -75,7 +75,7 @@ var ejs = require('ejs');
 app.set('view engine', 'ejs')
 
 app.get('/pokemon', function(req, res){
-    res.render('index');
+    res.render('index', {pokemon});
 })
 
 
