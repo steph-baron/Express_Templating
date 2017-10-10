@@ -78,6 +78,12 @@ app.get('/pokemon', function(req, res){
     res.render('index', {pokemon});
 })
 
+app.get('/pokemon/:id', function(req, res){
+    var pokemon_id = req.params.id;
+    var myPokemon = pokemon[pokemon_id-1];
+
+    res.render('profile', {myPokemon})
+})
 
 app.listen(8000, function(){
   console.log("Listening at port 8000...");
