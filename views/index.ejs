@@ -16,9 +16,9 @@
       <tbody>
         <% for (var i = 0; i < pokemon.length; i++) { %>
         <tr>
-          <td><img src=<%=pokemon[i].image_url%>></td>
-          <td><%=pokemon[i].name %></td>
           <td><%=pokemon[i].id %></td>
+          <td><%=pokemon[i].name %></td>
+          <td><img src=<%=pokemon[i].image_url%>></td>
         </tr>
         <% } %>
       </tbody>
