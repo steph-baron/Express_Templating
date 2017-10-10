@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>All Pokemon</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Sprite</td>
+          <td>Name</td>
+          <td>Pokedex Number</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (var i = 0; i < pokemon.length; i++) {%>
+        <tr>
+          <td><img src=<%=pokemon[i].image_url%>></td>
+          <td><%=pokemon[i].name %></td>
+          <td><%=pokemon[i].id %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
